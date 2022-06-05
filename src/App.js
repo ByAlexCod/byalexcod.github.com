@@ -1,15 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import { PortfolioHeader } from './PortfolioHeader';
-import { ExperinceList } from './ExperienceList';
 import { Outlet } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import { Route, Switch, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import React, { useEffect } from 'react'
 
 function App() {
   // use i18next to translate the text
-  const { t } = useTranslation();
   const { pathname, hash, key } = useLocation();
 
   useEffect(() => {

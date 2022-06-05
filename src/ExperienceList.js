@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Badge } from "./Badge";
-import { SkillBadgeIconFA } from "./SkillBadge";
 
 export function ExperinceList() {
 
@@ -12,9 +11,7 @@ export function ExperinceList() {
                     <div className="bg-white rounded-lg shadow p-6">
                         <h3 className="flex justify-between text-xl font-semibold text-gray-800">
                             <Link to={"/article/backfooder"}>
-                                <a href="#" target="_blank" rel="noopener noreferrer">
                                     Backfooder
-                                </a>
                             </Link>
                             <div className={"inline-flex"}>
 
@@ -39,9 +36,7 @@ export function ExperinceList() {
                     <div className="bg-white rounded-lg shadow p-6">
                         <h3 className="flex justify-between text-xl font-semibold text-gray-800">
                             <Link to={"/article/ocre"}>
-                                <a href="#" target="_blank" rel="noopener noreferrer">
                                     OCRE - Office Nationale des Forêts
-                                </a>
 
                             </Link>
                             <div className={"inline-flex"}>
@@ -60,9 +55,7 @@ export function ExperinceList() {
                     <div className="bg-white rounded-lg shadow p-6">
                         <h3 className="text-xl font-semibold text-gray-800">
                             <Link to={"/article/ideasbored"}>
-                                <a href="#" target="_blank" rel="noopener noreferrer">
                                     IdeasBored, un projet personnel
-                                </a>
                             </Link>
                         </h3>
                         <p className="mt-4 text-gray-600">
