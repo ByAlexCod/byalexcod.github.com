@@ -1,7 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@layer base {
+    ul, ol {
+      list-style: revert;
+    }
+  }
 .branding21 {
     visibility: hidden!important;
+}
+
+ul {
+    list-style-type: disc!important;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+
 }

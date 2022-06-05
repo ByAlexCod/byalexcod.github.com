@@ -4,13 +4,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Router, Routes, Route, HashRouter } from 'react-router-dom';
 import { initReactI18next } from 'react-i18next';
 
 import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { ExperinceList } from './ExperienceList';
 import { Contact } from './Contact';
+import { BackfooderArticle } from './articles/BackfooderArticle';
+import { OcreArticle } from './articles/OcreArticle';
+import { IdeasBored } from './articles/IdeasBored';
+import { ReactCompetence } from './competences/ReactCompetence';
+
+import { Home } from './Home';
+import { JavaCompetence } from './competences/JavaCompetence';
+import { DotnetCompetence } from './competences/DotnetCompetence';
 
 
 i18n
@@ -41,7 +49,16 @@ ReactDOM.render(
     <BrowserRouter >
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="/" element={<ExperinceList />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/article/backfooder" element={<BackfooderArticle />} />
+        <Route path="/article/ocre" element={<OcreArticle />} />
+        <Route path="/article/ideasbored" element={<IdeasBored />} />
+
+
+        <Route path="/competence/react" element={<ReactCompetence />} />
+        <Route path="/competence/java" element={<JavaCompetence />} />
+        <Route path="/competence/dotnet" element={<DotnetCompetence />} />
+
         <Route path="experience" element={<ExperinceList />} />
         <Route path="contact" element={<Contact />} />
       </Route>

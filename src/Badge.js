@@ -2,12 +2,12 @@ import { SkillBadgeIconFA } from "./SkillBadge";
 
 export function Badge({name}) {
     const badges = {
-        "java": <SkillBadgeIconFA skill={{icon: "java", name: "Java", type: "fab"}}/>,
-        "firebase": <SkillBadgeIconFA className={"ml-5"} skill={{icon: "fire", name: "Firebase", type: "fa"}}/>,
-        "oracle": <SkillBadgeIconFA className={"ml-5"} skill={{icon: "database", name: "Oracle", type: "fa"}}/>,
-        "react": <SkillBadgeIconFA className={"ml-5"} skill={{icon: "react", name: "React", type: "fab"}}/>,
-        ".net": <SkillBadgeIconFA className={"ml-5"} skill={{icon: "windows", name: "C# .Net Core", type: "fab"}}/>,
-        "mongo": <SkillBadgeIconFA className={"ml-5"} skill={{icon: "bars-staggered", name: "MongoDB", type: "fa-solid"}}/>,
+        "java": <SkillBadgeIconFA className={"ml-5"} skill={{icon: "fab fa-java", name: "Java"}}/>,
+        "firebase": <SkillBadgeIconFA className={"ml-5"} skill={{icon: "fa fa-fire", name: "Firebase"}}/>,
+        "oracle": <SkillBadgeIconFA className={"ml-5"} skill={{icon: "fa fa-database", name: "Oracle"}}/>,
+        "react": <SkillBadgeIconFA className={"ml-5"} skill={{icon: "fab fa-react", name: "ReactJS"}}/>,
+        ".net": <SkillBadgeIconFA className={"ml-5"} skill={{icon: "fab fa-windows", name: "C# .Net"}}/>,
+        "mongo": <SkillBadgeIconFA className={"ml-5"} skill={{icon: "fa fa-bars", name: "MongoDB"}}/>,
 
     }
 
